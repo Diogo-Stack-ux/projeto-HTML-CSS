@@ -39,12 +39,19 @@
    </section>
 
    <!-- seção de contatos -->
-    <section id="contatos">
+    <section id="contato">
         <h2>contato</h2>
-        <form>
-            <input type="text" placeholder="seu nome" required>
-            <input type="email" placeholder="seu email" required>
-            <textarea placeholder="sua mensagem" required></textarea>
+        <form id="form-contato">
+            <div id="mensagem-status"></div>
+            <input type="text" id="nome" placeholder="seu nome" >
+            <span class="erro" id="erro-nome"></span>
+
+            <input type="email"id="email" placeholder="seu email">
+            <span class="erro" id="erro-email"></span>
+
+            <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+             <span class="erro" id="erro-mensagem"></span>
+
             <button type="submit">Enviar</button>
             <button type="reset">Cancelar</button>
         </form>
@@ -58,6 +65,9 @@
             <a href="https://www.linkedin.com/in/diogo-silva-0765a5340/" target="_blank"><i class="fa-brands fa-linkedin"></i>linkedin</a>
             <a href="diogoferreirasilva16@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>Email</a>
     </footer>
+    <button id="toggle-dark-mode"></button>🌙 Modo Escuro</button>
+    <script src="./index.js" defer></script>
+
     </body>
     </html>
 
